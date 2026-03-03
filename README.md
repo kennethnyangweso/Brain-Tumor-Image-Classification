@@ -20,6 +20,7 @@ Medical imaging plays a critical role in diagnosing brain tumors. Rapid and accu
 classification of MRI images into tumor types can support radiologists and clinicians in making
 informed treatment decisions. The goal of this project is to leverage deep learning models to
 automatically classify brain MRI images into different tumor categories.
+
 By deploying the model as a web application, hospitals and research institutions can have a
 scalable, accessible tool for aiding diagnosis.
 
