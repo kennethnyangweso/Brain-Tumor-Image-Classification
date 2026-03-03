@@ -99,7 +99,7 @@ Three transfer learning models were trained and deployed :
 
 -	DenseNet-121 (green dash-dot line) also performs extremely well with AUC = 0.999, almost indistinguishable from EfficientNet-B0.
 
-### **Best Model (EfficientNet) Confusion Matrix:
+### **Best Model (EfficientNet) Confusion Matrix:**
 
 <img width="975" height="727" alt="image" src="https://github.com/user-attachments/assets/bf83d093-58ad-4a6a-8a15-4d7cfd9fe669" />
 
@@ -116,7 +116,10 @@ Three transfer learning models were trained and deployed :
 - All classes have high recall, with Glioma, NoTumor, and Pituitary almost perfect.
 - Meningioma is slightly more confused but still >98% correct.
 
-## 📂 **Project Structure**
+---
+## 🚀 **Deployment/App**
+
+### 📂 **Project Structure**
 
 ```│
 ├── app.py # Streamlit app
@@ -127,4 +130,37 @@ Three transfer learning models were trained and deployed :
 └── assets/ #  screenshots, diagrams
 ```
 
-## 
+-	Framework: Streamlit
+-	Model Saved: efficientnet_model.pth (PyTorch)
+
+Features:
+-	Upload MRI image for prediction
+-	Shows predicted tumor class and confidence
+-	Probability bar chart visualization
+
+Deployment Options:
+
+- Streamlit Community Cloud (live link possible)
+-	Local run via
+  
+```streamlit run app.py```
+
+This allows stakeholders to interactively test the model on new images.
+
+#### **Expected Results**
+
+<img width="1023" height="614" alt="image" src="https://github.com/user-attachments/assets/5c134a2b-fbc5-471c-890e-ffaff8c94a8c" />
+
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/e9b633ce-9541-417a-8aef-57336dcfb5ba" />
+
+<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/a4d908ea-92cc-4cd6-9abd-2393d8a78c3e" />
+
+Video demonstration link (copy the link below to view live demonstration of the brain tumor classifier):
+
+Link: https://drive.google.com/file/d/1KZSMKYDckz_CbDMhihBngb5glYVnoFJc/view?usp=drive_link
+
+
+
+
+
+
