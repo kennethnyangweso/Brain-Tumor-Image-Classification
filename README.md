@@ -159,8 +159,33 @@ Video demonstration link (copy the link below to view live demonstration of the 
 
 Link: https://drive.google.com/file/d/1KZSMKYDckz_CbDMhihBngb5glYVnoFJc/view?usp=drive_link
 
+---
 
+## **💡 Key Insights / Business Recommendations**
 
+-	EfficientNet-B0 demonstrated outstanding performance on brain MRI classification.
+-	Deep learning can automate tumor detection, reduce radiologist workload, and increase diagnostic speed.
+-	Expand dataset with more diverse MRI images for robustness.
+-	Apply data augmentation to further improve generalization.
+-	Integrate Grad-CAM or attention maps for explainability in clinical settings.
+-	Deploy as a web service for real-time hospital use.
+- Monitor model performance with new incoming data and retrain periodically
 
+---
 
+## 📝 **Installation**
 
+```bash
+git clone https://github.com/kennethnyangweso/Brain-Tumor-Image-Classification.git
+cd brain-tumor-classification
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+```
+
+## **👤 Author**
+
+**Kenneth Nyangweso**
+
+**Data Scientist | AI Engineer**
