@@ -14,7 +14,7 @@ st.set_page_config(
     layout="centered"
 )
 
-st.title("🧠 Brain Detector")
+st.title("🧠 Brain Tumor Detector")
 st.markdown("Deep Learning model using EfficientNet (PyTorch)")
 st.write("Upload an MRI image to classify the tumor type.")
 
