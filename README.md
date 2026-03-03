@@ -72,6 +72,21 @@ Three transfer learning models were trained and deployed :
 
 ## 🧩 **Evaluation**
 
+| METRIC/MODEL | ResNet-50 | EfficientNet-B0 | DenseNet-121 |
+|--------------|-----------|----------------|--------------|
+| ACCURACY (%) | 87.60     | 98.84          | 98.57        |
+| RECALL (%)   | 87.74     | 98.84          | 98.58        |
+| F1-SCORE (%) | 87.48     | 98.84          | 98.57        |
+
+<img width="975" height="582" alt="image" src="https://github.com/user-attachments/assets/86df5d75-1823-4cfd-9575-cc1224411f9a" />
+
+### **Key Insights**
+
+•	Best performing model: EfficientNet-B0 (slightly better than DenseNet-121 and more efficient).
+•	ResNet-50: Adequate but significantly worse, might not be suitable for high-stakes deployment.
+•	Balanced performance: All top two models have high recall and F1-score, meaning they handle class distribution well and are reliable in predicting the target.
+
+
 
 
 ## 📂 Project Structure
