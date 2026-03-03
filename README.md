@@ -1,4 +1,5 @@
-# 🧠 Brain Tumor Classification Using Deep Learning
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f17581b6-6da8-46fe-bbe3-dc3354f15e9e" />
+
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/) 
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-red?logo=pytorch&logoColor=white)](https://pytorch.org/) 
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.24-orange?logo=streamlit&logoColor=white)](https://streamlit.io/) 
@@ -82,14 +83,40 @@ Three transfer learning models were trained and deployed :
 
 ### **Key Insights**
 
-•	Best performing model: EfficientNet-B0 (slightly better than DenseNet-121 and more efficient).
-•	ResNet-50: Adequate but significantly worse, might not be suitable for high-stakes deployment.
-•	Balanced performance: All top two models have high recall and F1-score, meaning they handle class distribution well and are reliable in predicting the target.
+- Best performing model: EfficientNet-B0 (slightly better than DenseNet-121 and more efficient).
 
+-	ResNet-50: Adequate but significantly worse, might not be suitable for high-stakes deployment.
 
+- 	Balanced performance: All top two models have high recall and F1-score, meaning they handle class distribution well and are reliable in predicting the target.
 
+<img width="975" height="772" alt="image" src="https://github.com/user-attachments/assets/5494e668-9603-461b-9b8a-6006dc06a52e" />
 
-## 📂 Project Structure
+#### **Model Comparison via ROC Curves**
+
+-	ResNet-18 (blue dashed line) has a slightly lower ROC curve, with AUC = 0.981.
+
+-	EfficientNet-B0 (orange solid line) achieves a perfect ROC curve with AUC = 1.000.
+
+-	DenseNet-121 (green dash-dot line) also performs extremely well with AUC = 0.999, almost indistinguishable from EfficientNet-B0.
+
+### **Best Model (EfficientNet) Confusion Matrix:
+
+<img width="975" height="727" alt="image" src="https://github.com/user-attachments/assets/bf83d093-58ad-4a6a-8a15-4d7cfd9fe669" />
+
+#### **Insights**
+
+**Most Confusions:**
+- Meningioma vs Glioma (2 cases misclassified)
+-	Meningioma vs Pituitary (3 cases misclassified)
+-	These are very few, showing the model captures features of each tumor type well.
+
+**Overall Accuracy:** 
+- Extremely high; very few errors across ~1140+ samples in total.
+- Class-wise Sensitivity:
+- All classes have high recall, with Glioma, NoTumor, and Pituitary almost perfect.
+- Meningioma is slightly more confused but still >98% correct.
+
+## 📂 **Project Structure**
 
 ```│
 ├── app.py # Streamlit app
@@ -100,3 +127,4 @@ Three transfer learning models were trained and deployed :
 └── assets/ #  screenshots, diagrams
 ```
 
+## 
