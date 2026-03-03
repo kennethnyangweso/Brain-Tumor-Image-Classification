@@ -24,16 +24,10 @@ scalable, accessible tool for aiding diagnosis.
 
 ## 📌 **Project Objectives:**
 
-This project focuses on **classifying brain MRI images** into four categories:
-
-- `giloma`  
-- `meningioma`  
-- `notumor`  
-- `pituitary`  
-
-using **deep learning models** (ResNet-50, EfficientNet-B0, DenseNet-121) implemented in PyTorch and deployed as a web application using Streamlit.
-
-The goal is to provide a fast, reliable, and interactive tool for tumor classification.
+1. Develop deep learning models capable of classifying brain MRI images.
+2. Compare multiple models to identify the most effective for this task.
+3. Deploy the best performing model as an interactive web application for demonstration.
+4. Provide insights and performance metrics for future improvements.
 
 ---
 
@@ -47,15 +41,38 @@ The goal is to provide a fast, reliable, and interactive tool for tumor classifi
 
 ---
 
-## 🧠 Models Used
+## **🗂️ Data Overview**
 
-| Model          | Accuracy | Notes |
-|----------------|---------|-------|
-| ResNet-50      | 87.6%   | Baseline model, good for comparison |
-| EfficientNet-B0| 98.8%   | Best performing, used for deployment |
-| DenseNet-121   | 98.6%   | Strong alternative, slightly lower accuracy |
+-  Dataset: Brain MRI images from publicly available medical imaging datasets.
+-  Classes: glioma, meningioma, no tumor, pituitary.
+-  Training set: 5600 images across all classes.
+-  Validation set: 1120 images across all classes.
+-  Image Size: 224x224 pixels after preprocessing for model input.
+
+Each class has a sufficient number of images to enable robust model training.
+
+## 🧠 Modeling
+
+Three transfer learning models were trained and deployed :
+
+-  RestNet-50
+-  EfficientNet-B0
+-  DenseNet121
+
+**Implementation Details:**
+
+- Framework: PyTorch
+- Loss function: Cross-Entropy Loss
+- Optimizer: Adam
+- Training: GPU accelerated (T4 GPU)
+- Epochs: 10–20 depending on model
+- Evaluation metrics included confusion matrices, classification reports, and ROC curves.
 
 ---
+
+## 🧩 **Evaluation**
+
+
 
 ## 📂 Project Structure
 
@@ -64,7 +81,7 @@ The goal is to provide a fast, reliable, and interactive tool for tumor classifi
 ├── efficientnet_model.pth # Trained model weights
 ├── requirements.txt # Dependencies
 ├── README.md # Project documentation
-├── data/ # Optional: dataset folder
-└── assets/ # Optional: screenshots, diagrams
+├── data/ #  dataset folder
+└── assets/ #  screenshots, diagrams
 ```
 
