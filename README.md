@@ -23,6 +23,19 @@ automatically classify brain MRI images into different tumor categories.
 By deploying the model as a web application, hospitals and research institutions can have a
 scalable, accessible tool for aiding diagnosis.
 
+The brain classes include:
+
+1️⃣ Glioma - A tumor that occurs in the brain and spinal cord, originating from glial cells.
+Often aggressive and requires early detection.
+
+2️⃣ Meningioma - A tumor that forms on membranes covering the brain and spinal cord.
+Typically slow-growing and often benign.
+
+3️⃣ Pituitary Tumor - A tumor located in the pituitary gland at the base of the brain.
+Can affect hormone production and bodily functions.
+
+4️⃣ No Tumor - MRI scan shows no visible tumor presence. Represents healthy brain imaging.
+
 ## 📌 **Project Objectives:**
 
 1. Develop deep learning models capable of classifying brain MRI images.
