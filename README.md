@@ -1,6 +1,7 @@
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f17581b6-6da8-46fe-bbe3-dc3354f15e9e" />
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)](https://www.python.org/) 
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-red?logo=pytorch&logoColor=white)](https://pytorch.org/) 
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.24-orange?logo=streamlit&logoColor=white)](https://streamlit.io/) 
 [![ResNet-50](https://img.shields.io/badge/ResNet--50-CC0000?style=flat&logo=PyTorch&logoColor=white)](https://pytorch.org/) 
