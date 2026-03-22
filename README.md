@@ -67,6 +67,17 @@ Can affect hormone production and bodily functions.
 
 Each class has a sufficient number of images to enable robust model training.
 
+### **Class Distribution**
+
+<img width="859" height="547" alt="image" src="https://github.com/user-attachments/assets/8ee35e4d-35e9-4aa5-8939-95eb0c4cbc82" />
+
+**Observations:**
+
+- Perfectly balanced dataset: Each of the four classes (glioma, meningioma, notumor, pituitary) contains exactly 1,400 samples.
+
+- Equal representation: No class imbalance is present, which is beneficial for model training as it prevents bias toward any particular class.
+
+
 ## 🧠 Modeling
 
 Three transfer learning models were trained and deployed :
