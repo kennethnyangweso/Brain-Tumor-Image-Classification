@@ -77,6 +77,23 @@ Each class has a sufficient number of images to enable robust model training.
 
 - Equal representation: No class imbalance is present, which is beneficial for model training as it prevents bias toward any particular class.
 
+## Sample Images for  each class
+
+**Glioma**
+<img width="512" height="512" alt="Tr-gl_2" src="https://github.com/user-attachments/assets/42d42cd9-a8c8-4e83-88a1-bc52c4656b51" />
+
+**Meningioma**
+<img width="512" height="512" alt="Tr-aug-me_11" src="https://github.com/user-attachments/assets/47d893ab-59ab-4565-be4e-2e5bf64cd8fc" />
+
+**No tumor**
+<img width="177" height="197" alt="Tr-no_27" src="https://github.com/user-attachments/assets/f5020d24-76f7-4dce-ac8f-8558d5fdb4c1" />
+
+**Pituitary**
+
+<img width="512" height="512" alt="Tr-pi_20" src="https://github.com/user-attachments/assets/e6af0cbb-2739-4e3c-abd2-8ec1c6b98bd6" />
+
+
+
 
 ## 🧠 Modeling
 
